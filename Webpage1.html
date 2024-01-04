@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgba(86,56,90,255);
+        }
+        .pop{
+            background-color:rgba(74,48,77,255);
+            border-radius: 5px;
+            width: 400px;
+            position: relative;
+            margin-top: 100px;
+            margin-left: 540px;
+            border: 1px solid black;
+        }
+        .eles{
+            padding: 5px;
+            display: inline;
+        }
+        .eles p{
+            display: inline;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .table1{
+            padding: 50px;
+        }
+        .table1 h1,h3{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: white;
+        }
+        .outer{
+            display: flex;
+            flex-direction: row;
+        }
+        .bts{
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            border-radius: 3px;
+            display: flex;
+            width: 400px;
+            margin-left: 10px;
+            flex-direction: row;
+            align-items: center;
+            justify-content:left;
+            background-color: rgba(86,56,90,255);
+            
+        }
+        .form{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            margin: 18px;
+            display: flex;
+            flex-direction: column;
+            color: white ;
+        }
+        .form input[type="email"],input[type="password"] {
+            background-color: rgba(60,38,61,255);
+            width: 255px;
+            height: 30px;
+            border: 1px solid black;
+            border-radius: 3px ;
+        } 
+        .form input[type="submit"]{
+            background-color:rgba(255,178,122,255);
+            color: black;
+            height: 50px;
+            border: 2px solid black;
+            border-radius: 5px;
+            font-size: 20px;
+        }  
+        .dont{
+            position: relative;
+            font-size:20px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }    
+        .sign{
+            color:#db9b8b;
+        } 
+        .circle1{
+            position: absolute;
+            top:30%;
+            bottom: 20%;
+            left: 28%;
+            width: 400px;
+            height: 400px;
+            background-color: rgba(97,70,101,255);
+            border-radius: 50%;
+        }
+        .circle2{
+            left: 10%;
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            background-color: rgba(97,70,101,255);
+            border-radius: 50%;
+        }
+        .circle3{
+            top:50%;
+            left: 64%;
+            height: 250px;
+            width: 250px;
+            position: absolute;
+            background-color: rgba(97,70,101,255);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <div class="pop">
+    <div class="table1">
+        <h1>Login With</h1>
+        <div class="outer">
+            <div class="bts">
+                <img src="images/google.svg" style="width: 30px;height:30px;padding-right:8px;padding-left:23px"><div> </div>
+                <div>
+                <a href="#" style="text-decoration: none;color:white;">Google</a>
+                </div>
+            </div>
+            <div class="bts">
+                <img src="images/facebook.svg" style="width: 40px;height:40px;padding-left:10px">
+                <div>
+                <a href="#" style="text-decoration: none;color:white">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <h3>or</h3>
+        <div class="form">
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Enter your email" id=""><br>
+            <label for="password">Password</label>
+            <input type="password" name="email" placeholder="Enter your password" id=""><br>
+            <input type="submit" value="Log In">
+        </div>
+    </div>
+</div><br>
+
+<div class="dont">
+    Don't have and account?<div class="sign">SignUp</div>
+</div>
+    
+    
+</body>
+</html>
